@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareInsta - Generador de Contraseñas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<header class="header">
+    <h1 class="logo">
+        <span>Compare</span>Insta
+    </h1>
+</header>
+
+<body>
+
+    <div class="container">
+        <div class="form-card">
+
+            <h2>Generador de Contraseñas</h2>
+            <p class="subtitle">Creá una contraseña segura en segundos</p>
+
+            <!-- Longitud -->
+            <div class="field-group">
+                <label for="length-input">Longitud: <strong id="length-display">12</strong></label>
+                <input type="range" id="length-input" min="6" max="32" value="12">
+            </div>
+
+            <!-- Opciones -->
+            <div class="options-grid">
+
+                <label class="option-label">
+                    <input type="checkbox" id="include-uppercase" checked>
+                    <span>Mayúsculas (A-Z)</span>
+                </label>
+
+                <label class="option-label">
+                    <input type="checkbox" id="include-numbers" checked>
+                    <span>Números (0-9)</span>
+                </label>
+
+                <label class="option-label">
+                    <input type="checkbox" id="include-symbols">
+                    <span>Símbolos (!@#)</span>
+                </label>
+
+            </div>
+
+            <!-- Resultado -->
+            <div class="result-box" id="result-box">
+                <span id="password-display">— presioná Generar —</span>
+                <button class="copy-btn" id="copy-btn" title="Copiar contraseña">📝</button>
+            </div>
+
+            <!-- Indicador de fortaleza -->
+            <div class="strength-bar-wrapper">
+                <div class="strength-bar" id="strength-bar"></div>
+            </div>
+            <p class="strength-label" id="strength-label"></p>
+
+            <!-- Botón principal -->
+            <button class="btn-generate" id="generate-btn">Generar contraseña</button>
+
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

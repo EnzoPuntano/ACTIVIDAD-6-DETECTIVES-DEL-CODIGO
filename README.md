@@ -11,7 +11,8 @@ Es escribir código que sea fácil de leer y mantener por otros desarrolladores,
 Es reestructurar código existente sin cambiar lo que hace, para que sea más legible y profesional.
 
 El código sucio del PDF (punto de partida)
-jsfunction g(l, s) {
+<script>
+    function g(l, s) {
     let c = "abc...123";
     if(s) c += "!@#";
     let p = "";
@@ -20,3 +21,31 @@ jsfunction g(l, s) {
     }
     return p;
 }
+</script>
+<script>
+    El código refactorizado (versión profesional)
+/**
+ * Genera una contraseña segura según los criterios seleccionados.
+ *
+ * @param {number}  length       - Longitud deseada.
+ * @param {boolean} useUppercase - Si incluye mayúsculas.
+ * @param {boolean} useNumbers   - Si incluye números.
+ * @param {boolean} useSymbols   - Si incluye símbolos.
+ * @returns {string} La contraseña generada.
+ */
+function generateSecurePassword(length, useUppercase, useNumbers, useSymbols) {
+
+    let availableCharacters = LOWERCASE_CHARACTERS;
+
+    if (useUppercase) availableCharacters += UPPERCASE_CHARACTERS;
+    if (useNumbers)   availableCharacters += NUMERIC_CHARACTERS;
+    if (useSymbols)   availableCharacters += SYMBOL_CHARACTERS;
+
+    let securePassword = "";
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * availableCharacters.length);
+        securePassword += availableCharacters.charAt(randomIndex);
+    }
+
+    return securePassword;
+</script>

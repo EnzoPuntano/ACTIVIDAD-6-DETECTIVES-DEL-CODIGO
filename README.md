@@ -50,3 +50,8 @@ function generateSecurePassword(length, useUppercase, useNumbers, useSymbols) {
 
     return securePassword;
 </script>
+
+Recursos consultados
+
+Clean Code JS (español)
+Google JavaScript Style Guide

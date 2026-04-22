@@ -1,4 +1,4 @@
-Generador de Contraseñas Seguras
+CompareInsta - Generador de Contraseñas Seguras
 Aplicación web que genera contraseñas seguras con opciones personalizables.
 Proyecto desarrollado para la Actividad 6: Detectives del Código — Materia: Proyecto de Implementación de Sitios Web Dinámicos.
 EEST N.º 1 "Eduardo Ader" — Vicente López — 7° año 2° — 2026.

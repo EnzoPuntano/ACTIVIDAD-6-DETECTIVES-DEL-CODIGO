@@ -50,7 +50,7 @@ function generateSecurePassword(length, useUppercase, useNumbers, useSymbols) {
 
     return securePassword;
 </script>
-
+<br></br>
 Recursos consultados
 
 Clean Code JS (español)

@@ -54,4 +54,4 @@ function generateSecurePassword(length, useUppercase, useNumbers, useSymbols) {
 Recursos consultados
 
 Clean Code JS (español)
-Google JavaScript Style Guide
+<br>Google JavaScript Style Guide</br>
